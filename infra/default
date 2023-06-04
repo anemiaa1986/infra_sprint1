@@ -27,13 +27,13 @@ server {
 server {
     if ($host = anemiaa.ddns.net) {
         return 301 https://$host$request_uri;
-    } # managed by Certbot
+    }
 
 
 
     listen 80;
     server_name 158.160.65.62 anemiaa.ddns.net;
-    return 404; # managed by Certbot
+    return 404;
 
 }
 server {
@@ -71,12 +71,12 @@ server {
 server {
     if ($host = sprt14kitty.ddns.net) {
         return 301 https://$host$request_uri;
-    } # managed by Certbot
+    } 
 
 
     server_name 158.160.65.62 sprt14kitty.ddns.net;
     listen 80;
-    return 404; # managed by Certbot
+    return 404; 
 
 
 }
